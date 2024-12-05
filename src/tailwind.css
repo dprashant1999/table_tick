@@ -1,0 +1,101 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@tailwind base;
+/* *{@apply font-pop;} */
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Extralight.woff') format('woff'),
+         url('../fonts/ClashDisplay-Extralight.woff') format('woff'),
+         url('../fonts/ClashDisplay-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Light.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Light.woff') format('woff'),
+         url('../fonts/ClashDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Regular.woff') format('woff'),
+         url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Medium.woff') format('woff'),
+         url('../fonts/ClashDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Semibold.woff') format('woff'),
+         url('../fonts/ClashDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Bold.woff') format('woff'),
+         url('../fonts/ClashDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Variable.woff') format('woff'),
+         url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+ 
+*{font-family: ClashDisplay;}
+.warrper{@apply w-full max-w-screen-2xl px-5 mx-auto;}
+.anim{@apply transition-all duration-300;}
+.btn{@apply text-white bg-primary text18 rounded font-medium border border-primary anim py-3 px-4 lg:py-3.5 lg:px-5 2xl:py-4 2xl:px-6 hover:text-primary hover:bg-transparent hover:border-primary;}
+/* text64 h1  */
+.h1,h1{@apply text-32 md:text-38 lg:text-46 xl:text-50 2xl:text-64;}
+/* text48 h2  */
+.h2,h2{@apply text-28 md:text-34 lg:text-42 2xl:text-48;}
+.text16{@apply text-12 md:text-14 2xl:text-16;}
+.text18{@apply text-14 lg:text-16 2xl:text-18;}
+.text20{@apply text-14 md:text-18 2xl:text-20;}
+.text24{@apply text-18 md:text-20 lg:text-22 2xl:text-24;}
+.text28{@apply text-20 md:text-22 lg:text-24 2xl:text-28;}
+#add.active{@apply translate-x-0;}
+@media (min-width: 1536px) and (max-width: 1750px){
+    .hero_titel h1{@apply text-50;}
+}
+.title_tab.active .close {
+  display: block;
+  /* background-color: black; */
+}
+.title_tab.active .open {
+  display: none;
+  background-color: black;
+}
+.Accordion_item[open] {
+  background-color: #000;
+}
+@tailwind components;
+@tailwind utilities;

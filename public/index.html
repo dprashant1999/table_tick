@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/icomoon.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<body>
+    <!-- Header  -->
+    <header class="py-5 hidden lg:block">
+        <div class="warrper">
+            <div class="flex items-center justify-between">
+                <a href="index.html">
+                    <img src="assets/images/logo.webp" class="max-w-40 2xl:max-w-full" alt="logo"/>
+                </a>
+                <ul class="flex items-center space-x-3.5 lg:space-x-5 xl:space-x-10 2xl:space-x-12">
+                    <li>
+                        <a href="#" class="inline-block text20 font-medium text-primary focus:font-bold hover:font-bold hover:text-secondary focus:text-secondary anim">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text20 font-medium text-primary hover:font-bold hover:text-secondary anim">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text20 font-medium text-primary hover:font-bold hover:text-secondary anim">Features</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text20 font-medium text-primary hover:font-bold hover:text-secondary anim">Procedure</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text20 font-medium text-primary hover:font-bold hover:text-secondary anim">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text20 font-medium text-primary hover:font-bold hover:text-secondary anim">Blog</a>
+                    </li>
+                </ul>
+                <div>
+                    <button class="btn">How To Use</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="lg:hidden flex items-center justify-between p-5">
+        <div class="flex items-center space-x-2.5">
+            <span class="inline-block" onclick="toggleActive('#add','translate-x-full');">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447715 2 0 1.55228 0 1ZM0 6C0 5.44772 0.447715 5 1 5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H1C0.447715 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447715 12 1 12H5C5.55228 12 6 11.5523 6 11C6 10.4477 5.55228 10 5 10H1Z" fill="#292929"/>
+                </svg>
+            </span>
+            <a href="#">
+                <img src="assets/images/logo.webp" class="max-w-32 sm:max-w-40" alt="logo"/>
+            </a>
+        </div>
+        <div>
+            <button class="text-white bg-primary text18 rounded font-medium border anim py-2 px-3 sm:py-2.5 sm:px-4 md:py-3 md:px-5 lg:py-3.5 lg:px-7 2xl:py-4 2xl:px-10 hover:text-primary hover:bg-transparent hover:border-primary">How To Use</button>
+        </div>
+    </div>
+    <!-- mobile header -->
+    <div class="w-full h-screen bg-black/30 backdrop-blur-sm fixed inset-0 block translate-x-0 anim hidden" id="add">
+        <ul class="w-full h-screen max-w-96 bg-white">
+            <li class="flex items-center justify-between border-b p-5 border-zinc-400">
+                <div class="flex items-center space-x-2.5">
+                    <a href="index.html">
+                        <img src="assets/images/logo.webp" class="max-w-40" alt="logo"/>
+                    </a>
+                </div>
+                <span class="inline-block" onclick="toggleActive('#add','translate-x-full');">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6224 11.8081C14.1225 12.3081 14.1225 13.124 13.6224 13.624C13.3717 13.8747 13.0446 14 12.715 14C12.3841 14 12.057 13.8747 11.8076 13.624L6.99872 8.81547L2.18984 13.624C1.93918 13.8747 1.61205 14 1.28245 14C0.951588 14 0.624451 13.8747 0.375056 13.624C-0.125019 13.124 -0.125019 12.3119 0.375056 11.8081L5.18393 6.99953L0.375056 2.19097C-0.125019 1.69093 -0.125019 0.875071 0.375056 0.375031C0.87513 -0.12501 1.68726 -0.12501 2.19112 0.375031L7 5.18358L11.8089 0.375031C12.309 -0.12501 13.1211 -0.12501 13.6249 0.375031C14.125 0.875071 14.125 1.68715 13.6249 2.19097L8.81607 6.99953L13.6249 11.8081H13.6224Z" fill="#515F74"/>
+                    </svg>
+                </span>
+            </li>
+            <li class="px-5 py-3 border-b border-gray-100">
+                <a href="#" class="inline-block text-20 font-medium text-primary focus:text-secondary focus:font-bold">Home</a>
+            </li>
+            <li class="px-5 py-3 border-b border-gray-100">
+                <a href="#" class="inline-block text-20 font-medium text-primary">About Us</a>
+            </li>
+            <li class="px-5 py-3 border-b border-gray-100">
+                <a href="#" class="inline-block text-20 font-medium text-primary">Features</a>
+            </li>
+            <li class="px-5 py-3 border-b border-gray-100">
+                <a href="#" class="inline-block text-20 font-medium text-primary">Procedure</a>
+            </li>
+            <li class="px-5 py-3 border-b border-gray-100">
+                <a href="#" class="inline-block text-20 font-medium text-primary">Pricing</a>
+            </li>
+            <li class="px-5 py-3 border-b border-gray-100">
+                <a href="#" class="inline-block text-20 font-medium text-primary">Blog</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Header  -->
+    <!-- Banner  -->
+    <section>
+        <div class="flex flex-wrap items-stretch">
+            <div class="w-full lg:w-7/12 p-5 flex flex-wrap py-48 px-5 relative">
+                <div class="hero_titel absolute top-1/2 -translate-y-1/2 max-w-xl md:left-20 lg:left-48">
+                   <h1 class="font-bold text-primary">Revolutionize Your Restaurant Operations</h1>
+                </div>
+                <div class="max-w-xs ml-auto my-auto">
+                    <p class="text-18 font-normal text-primary opacity-75">Seamlessly manage orders, track bills, and simplify your restaurant operations with TableTick.</p>
+                </div>
+                <span class="py-5 bg-[#FCF2CC] absolute w-[57.2%] h-full inset-y-0 right-0 -z-10"></span>
+           </div> 
+           <div class="w-full lg:w-5/12 bg-white p-5 flex justify-center items-center">
+            <div class="flex flex-wrap items-center -space-x-7">
+                <img src="assets/images/explore_btn.webp" alt="explore_btn"/>
+                <span class="font-medium text-16 text-primary whitespace-nowrap">Explore Tutorial</span>
+            </div>
+           </div> 
+        </div>
+        <div class="flex flex-wrap items-stretch">
+            <div class="w-full md:w-1/2 lg:w-3/12 bg-[#DFF0DF]">
+                <img src="assets/images/home_banner1.webp" class="mt-[45px]" alt="">
+            </div>
+            <div class="w-full md:w-full sm:w-1/2 lg:w-4/12 pt-3 px-3">
+                <div class="mt-auto">
+                    <p class="text20 text-primary font-semibold mb-2">Book Demo</p>
+                    <form class="flex flex-wrap items-center -mx-2.5">
+                        <div class="w-1/2 p-2.5">
+                            <label class="text16 text-primary font-medium block">Name</label>
+                            <input type="text" class="p-2.5 lg:p-3 2xl:p-4 bg-[#EDEDED] rounded text-primary outline-none font-medium inline-block w-full">
+                        </div>
+                        <div class="w-1/2 p-2.5">
+                            <label class="text16 text-primary font-medium block">Email</label>
+                            <input type="text" class="p-2.5 lg:p-3 2xl:p-4 bg-[#EDEDED] rounded text-primary outline-none font-medium w-full">
+                        </div>
+                        <div class="w-1/2 p-2.5">
+                            <label class="text16 text-primary font-medium">Restaurent Name</label>
+                            <input type="text" class="p-2.5 lg:p-3 2xl:p-4 bg-[#EDEDED] rounded text-primary outline-none font-medium w-full">
+                        </div>
+                        <div class="w-1/2 p-2.5">
+                            <label class="text16 text-primary font-medium">Mobile Number</label>
+                            <input type="text" class="p-2.5 lg:p-3 2xl:p-4 bg-[#EDEDED] rounded text-primary outline-none font-medium w-full">
+                        </div>
+                        <div class="w-1/2 p-2.5">
+                            <label class="text16 text-primary font-medium">Country</label>
+                            <input type="text" class="p-2.5 lg:p-3 2xl:p-4 bg-[#EDEDED] rounded text-primary outline-none font-medium w-full">
+                        </div>
+                        <div class="w-1/2 p-2.5">
+                            <button class="bg-secondary text18 font-medium text-white rounded py-2.5 px-4 lg:py-3 lg:px-5 2xl:py-4 2xl:px-6">Next</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="w-full lg:w-5/12 bg-[#FFE5DF]">
+                <img src="assets/images/1212.png" class=""  alt="">
+            </div>
+        </div>
+    </section> 
+    <!-- Banner  -->
+    <!-- Unlock box  -->
+     <section class="py-5 lg:py-[30px] 2xl:py-10">
+        <div class="warrper">
+            <div class="bg-primary py-12 px-10 lg:py-16 lg:px-12 2xl:py-[75px] 2xl:px-16 rounded-[10px] lg:rounded-[20px] 2xl:rounded-[30px]">
+                <div class="flex flex-wrap -mx-2.5">
+                    <div class="w-full lg:w-6/12 p-2.5">
+                        <h2 class="text-white font-bold mb-7">Unlock  the  Power of  Seamless  Restaurant Management</h2>
+                        <div class="flex flex-wrap items-center">
+                            <div class="pr-6 md:lg:pr-8 lg:pr-10 2xl:pr-12 border-r border-white/30">
+                                <h3 class="text24 text-yellow font-bold">5 Million +</h3>
+                                <p class="text18 text-white/50 font-medium">World Wide active users</p>
+                            </div>
+                            <div class="px-6 md:px-8 lg:px-10 2xl:px-12 border-r border-white/30">
+                                <h3 class="text24 text-yellow font-bold">50,000+</h3>
+                                <p class="text18 text-white/50 font-medium">Orders Managed Daily</p>
+                            </div>
+                            <div class="pl-3 md:pl-4 lg:pl-6 2xl:pl-8">
+                                <h3 class="text24 text-yellow font-bold">24/7</h3>
+                                <p class="text18 text-white/50 font-medium">Support</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-3/12 p-2.5">
+                        <div class="bg-white/10 rounded-xl p-4 lg:p-5 2xl:p-7">
+                            <h3 class="text24 font-bold text-white mb-5">Efficient Order Management</h3>
+                            <button class="text18 text-primary font-medium rounded-xl bg-yellow py-2.5 px-4 lg:py-3 lg:px-5 2xl:py-4 2xl:px-6">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-3/12 p-2.5">
+                        <div class="bg-white/10 rounded-xl p-4 lg:p-5 2xl:p-7">
+                            <h3 class="text24 font-bold text-white mb-5">Efficient Order Management</h3>
+                            <button class="text18 text-primary font-medium rounded-xl bg-yellow py-2.5 px-4 lg:py-3 lg:px-5 2xl:py-4 2xl:px-6">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Unlock box  -->
+    <!-- about  -->
+  <section class="py-5 lg:py-[30px] 2xl:py-10 relative">
+        <div class="warrper relative">
+            <div class="text-center pb-8 lg:pb-12">
+                <p class="text18 text-secondary font-medium">ABOUT</p>
+                <h2 class="text-primary font-bold">How  It  Works</h2>
+            </div>
+            <div class="space-y-10 xl:space-y-20 sm:absolute sm:top-32 xl:top-52 w-full max-w-screen-xl sm:left-1/2 sm:-translate-x-1/2 z-50">
+                <div class="flex flex-wrap justify-between -mx-3.5 relative">
+                    <div class="w-full sm:w-1/2 lg:w-4/12 p-3.5">
+                        <div class="sm:max-w-52 sm:ml-auto text-center sm:text-right w-full">
+                             <span class="w-14 h-14 2xl:w-20 2xl:h-20 rounded-full bg-green flex items-center justify-center mx-auto sm:ml-auto sm:m-0">
+                                <svg class="w-5 h-8 2xl:w-6 2xl:h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 38" fill="none">
+                                    <path d="M19.9949 2.68836C19.5291 2.68836 19.1513 2.31035 19.1513 1.84418C19.1513 1.37801 19.5291 1 19.9949 1C21.6359 1 23.1271 1.67116 24.2076 2.75228C25.288 3.8334 25.9587 5.3256 25.9587 6.96878V26.2527V31.0312C25.9587 32.6733 25.288 34.1655 24.2076 35.2477C23.1271 36.3288 21.6359 37 19.9949 37H6.65772C5.01672 37 3.52551 36.3288 2.4451 35.2477C1.36469 34.1666 0.69397 32.6744 0.69397 31.0312V26.2527V6.96878C0.69397 5.3267 1.36469 3.83451 2.4451 2.75228C3.52551 1.67116 5.01672 1 6.65772 1C7.12359 1 7.50134 1.37801 7.50134 1.84418C7.50134 2.31035 7.12359 2.68836 6.65772 2.68836C5.48259 2.68836 4.41319 3.16996 3.63675 3.94582C2.8614 4.72167 2.37902 5.79177 2.37902 6.96878V25.4096H24.2725V6.96878C24.2725 5.79177 23.7912 4.72167 23.0148 3.94582C22.2395 3.16996 21.1701 2.68836 19.9938 2.68836H19.9949ZM6.8064 9.89475C6.4771 9.56524 6.4771 9.03184 6.8064 8.70232C7.1357 8.3728 7.66875 8.3728 7.99915 8.70232L12.4838 13.1899V1.84528C12.4838 1.37911 12.8616 1.0011 13.3274 1.0011C13.7933 1.0011 14.1711 1.37911 14.1711 1.84528V13.1899L18.6557 8.70232C18.985 8.3728 19.5192 8.3728 19.8485 8.70232C20.1778 9.03184 20.1778 9.56524 19.8485 9.89475L13.9244 15.8228C13.5951 16.1523 13.0609 16.1523 12.7316 15.8228L6.8075 9.89475H6.8064ZM11.736 31.9448C11.2701 31.9448 10.8924 31.5668 10.8924 31.1018C10.8924 30.6356 11.2701 30.2576 11.736 30.2576H14.9167C15.3825 30.2576 15.7603 30.6356 15.7603 31.1018C15.7603 31.5679 15.3825 31.9448 14.9167 31.9448H11.736ZM2.38012 27.0969V31.0312C2.38012 32.2082 2.8614 33.2783 3.63785 34.0542C4.41319 34.83 5.48259 35.3116 6.65882 35.3116H19.996C21.1712 35.3116 22.2406 34.83 23.017 34.0542C23.7923 33.2783 24.2747 32.2082 24.2747 31.0312V27.0969H2.38122H2.38012Z" fill="white" stroke="white" stroke-width="0.5"/>
+                                </svg>
+                             </span>
+                            <h3 class="text28 text-primary font-semibold mt-3 lg:mt-5 2xl:mt-7">Download & Set Up</h3>
+                            <p class="text-14 xl:text-16 text-primary font-medium mt-1.5 lg:mt-3.5">Install TableTick and configure it in minutes.</p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-4/12 p-3.5 pb-0 sm:pb-3.5">
+                        <div class="sm:max-w-52 sm:mr-auto text-center sm:text-left w-full">
+                            <span class="w-14 h-14 2xl:w-20 2xl:h-20 rounded-full bg-green flex items-center justify-center mx-auto sm:m-0">
+                                <svg class="w-5 h-8 2xl:w-6 2xl:h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 38" fill="none">
+                                    <path d="M19.9949 2.68836C19.5291 2.68836 19.1513 2.31035 19.1513 1.84418C19.1513 1.37801 19.5291 1 19.9949 1C21.6359 1 23.1271 1.67116 24.2076 2.75228C25.288 3.8334 25.9587 5.3256 25.9587 6.96878V26.2527V31.0312C25.9587 32.6733 25.288 34.1655 24.2076 35.2477C23.1271 36.3288 21.6359 37 19.9949 37H6.65772C5.01672 37 3.52551 36.3288 2.4451 35.2477C1.36469 34.1666 0.69397 32.6744 0.69397 31.0312V26.2527V6.96878C0.69397 5.3267 1.36469 3.83451 2.4451 2.75228C3.52551 1.67116 5.01672 1 6.65772 1C7.12359 1 7.50134 1.37801 7.50134 1.84418C7.50134 2.31035 7.12359 2.68836 6.65772 2.68836C5.48259 2.68836 4.41319 3.16996 3.63675 3.94582C2.8614 4.72167 2.37902 5.79177 2.37902 6.96878V25.4096H24.2725V6.96878C24.2725 5.79177 23.7912 4.72167 23.0148 3.94582C22.2395 3.16996 21.1701 2.68836 19.9938 2.68836H19.9949ZM6.8064 9.89475C6.4771 9.56524 6.4771 9.03184 6.8064 8.70232C7.1357 8.3728 7.66875 8.3728 7.99915 8.70232L12.4838 13.1899V1.84528C12.4838 1.37911 12.8616 1.0011 13.3274 1.0011C13.7933 1.0011 14.1711 1.37911 14.1711 1.84528V13.1899L18.6557 8.70232C18.985 8.3728 19.5192 8.3728 19.8485 8.70232C20.1778 9.03184 20.1778 9.56524 19.8485 9.89475L13.9244 15.8228C13.5951 16.1523 13.0609 16.1523 12.7316 15.8228L6.8075 9.89475H6.8064ZM11.736 31.9448C11.2701 31.9448 10.8924 31.5668 10.8924 31.1018C10.8924 30.6356 11.2701 30.2576 11.736 30.2576H14.9167C15.3825 30.2576 15.7603 30.6356 15.7603 31.1018C15.7603 31.5679 15.3825 31.9448 14.9167 31.9448H11.736ZM2.38012 27.0969V31.0312C2.38012 32.2082 2.8614 33.2783 3.63785 34.0542C4.41319 34.83 5.48259 35.3116 6.65882 35.3116H19.996C21.1712 35.3116 22.2406 34.83 23.017 34.0542C23.7923 33.2783 24.2747 32.2082 24.2747 31.0312V27.0969H2.38122H2.38012Z" fill="white" stroke="white" stroke-width="0.5"/>
+                                </svg>
+                             </span>
+                            <h3 class="text28 text-primary font-semibold mt-3 lg:mt-5 2xl:mt-7">Enhance Efficiency</h3>
+                            <p class="text16 text-primary font-medium mt-1.5 lg:mt-3.5">Minimize delays, ensure satisfaction with efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-between -mx-3.5">
+                    <div class="w-full sm:w-6/12 p-3.5 pt-0 sm:pt-3.5">
+                        <div class="sm:text-right text-center md:max-w-60 w-full">
+                            <span class="w-14 h-14 2xl:w-20 2xl:h-20 rounded-full bg-secondary flex items-center justify-center mx-auto sm:m-0 sm:ml-auto">
+                                <svg class="w-5 h-8 2xl:w-6 2xl:h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 38" fill="none">
+                                    <path d="M19.9949 2.68836C19.5291 2.68836 19.1513 2.31035 19.1513 1.84418C19.1513 1.37801 19.5291 1 19.9949 1C21.6359 1 23.1271 1.67116 24.2076 2.75228C25.288 3.8334 25.9587 5.3256 25.9587 6.96878V26.2527V31.0312C25.9587 32.6733 25.288 34.1655 24.2076 35.2477C23.1271 36.3288 21.6359 37 19.9949 37H6.65772C5.01672 37 3.52551 36.3288 2.4451 35.2477C1.36469 34.1666 0.69397 32.6744 0.69397 31.0312V26.2527V6.96878C0.69397 5.3267 1.36469 3.83451 2.4451 2.75228C3.52551 1.67116 5.01672 1 6.65772 1C7.12359 1 7.50134 1.37801 7.50134 1.84418C7.50134 2.31035 7.12359 2.68836 6.65772 2.68836C5.48259 2.68836 4.41319 3.16996 3.63675 3.94582C2.8614 4.72167 2.37902 5.79177 2.37902 6.96878V25.4096H24.2725V6.96878C24.2725 5.79177 23.7912 4.72167 23.0148 3.94582C22.2395 3.16996 21.1701 2.68836 19.9938 2.68836H19.9949ZM6.8064 9.89475C6.4771 9.56524 6.4771 9.03184 6.8064 8.70232C7.1357 8.3728 7.66875 8.3728 7.99915 8.70232L12.4838 13.1899V1.84528C12.4838 1.37911 12.8616 1.0011 13.3274 1.0011C13.7933 1.0011 14.1711 1.37911 14.1711 1.84528V13.1899L18.6557 8.70232C18.985 8.3728 19.5192 8.3728 19.8485 8.70232C20.1778 9.03184 20.1778 9.56524 19.8485 9.89475L13.9244 15.8228C13.5951 16.1523 13.0609 16.1523 12.7316 15.8228L6.8075 9.89475H6.8064ZM11.736 31.9448C11.2701 31.9448 10.8924 31.5668 10.8924 31.1018C10.8924 30.6356 11.2701 30.2576 11.736 30.2576H14.9167C15.3825 30.2576 15.7603 30.6356 15.7603 31.1018C15.7603 31.5679 15.3825 31.9448 14.9167 31.9448H11.736ZM2.38012 27.0969V31.0312C2.38012 32.2082 2.8614 33.2783 3.63785 34.0542C4.41319 34.83 5.48259 35.3116 6.65882 35.3116H19.996C21.1712 35.3116 22.2406 34.83 23.017 34.0542C23.7923 33.2783 24.2747 32.2082 24.2747 31.0312V27.0969H2.38122H2.38012Z" fill="white" stroke="white" stroke-width="0.5"/>
+                                </svg>
+                             </span>
+                            <h3 class="text28 text-primary font-semibold mt-3 lg:mt-5 2xl:mt-7">Track Bills and Payments</h3>
+                            <p class="text16 text-primary font-medium mt-1.5 lg:mt-3.5">Simplify billing with automated calculations and easy splits.</p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-6/12 p-3.5">
+                        <div class="text-center sm:text-left md:max-w-60 sm:ml-auto w-full">
+                            <span class="w-14 h-14 2xl:w-20 2xl:h-20 rounded-full bg-secondary flex items-center justify-center sm:m-0 mx-auto sm:mr-auto">
+                                <svg class="w-5 h-8 2xl:w-6 2xl:h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 38" fill="none">
+                                    <path d="M19.9949 2.68836C19.5291 2.68836 19.1513 2.31035 19.1513 1.84418C19.1513 1.37801 19.5291 1 19.9949 1C21.6359 1 23.1271 1.67116 24.2076 2.75228C25.288 3.8334 25.9587 5.3256 25.9587 6.96878V26.2527V31.0312C25.9587 32.6733 25.288 34.1655 24.2076 35.2477C23.1271 36.3288 21.6359 37 19.9949 37H6.65772C5.01672 37 3.52551 36.3288 2.4451 35.2477C1.36469 34.1666 0.69397 32.6744 0.69397 31.0312V26.2527V6.96878C0.69397 5.3267 1.36469 3.83451 2.4451 2.75228C3.52551 1.67116 5.01672 1 6.65772 1C7.12359 1 7.50134 1.37801 7.50134 1.84418C7.50134 2.31035 7.12359 2.68836 6.65772 2.68836C5.48259 2.68836 4.41319 3.16996 3.63675 3.94582C2.8614 4.72167 2.37902 5.79177 2.37902 6.96878V25.4096H24.2725V6.96878C24.2725 5.79177 23.7912 4.72167 23.0148 3.94582C22.2395 3.16996 21.1701 2.68836 19.9938 2.68836H19.9949ZM6.8064 9.89475C6.4771 9.56524 6.4771 9.03184 6.8064 8.70232C7.1357 8.3728 7.66875 8.3728 7.99915 8.70232L12.4838 13.1899V1.84528C12.4838 1.37911 12.8616 1.0011 13.3274 1.0011C13.7933 1.0011 14.1711 1.37911 14.1711 1.84528V13.1899L18.6557 8.70232C18.985 8.3728 19.5192 8.3728 19.8485 8.70232C20.1778 9.03184 20.1778 9.56524 19.8485 9.89475L13.9244 15.8228C13.5951 16.1523 13.0609 16.1523 12.7316 15.8228L6.8075 9.89475H6.8064ZM11.736 31.9448C11.2701 31.9448 10.8924 31.5668 10.8924 31.1018C10.8924 30.6356 11.2701 30.2576 11.736 30.2576H14.9167C15.3825 30.2576 15.7603 30.6356 15.7603 31.1018C15.7603 31.5679 15.3825 31.9448 14.9167 31.9448H11.736ZM2.38012 27.0969V31.0312C2.38012 32.2082 2.8614 33.2783 3.63785 34.0542C4.41319 34.83 5.48259 35.3116 6.65882 35.3116H19.996C21.1712 35.3116 22.2406 34.83 23.017 34.0542C23.7923 33.2783 24.2747 32.2082 24.2747 31.0312V27.0969H2.38122H2.38012Z" fill="white" stroke="white" stroke-width="0.5"/>
+                                </svg>
+                             </span>
+                            <h3 class="text28 text-primary font-semibold mt-3 lg:mt-5 2xl:mt-7">Take and Manage Orders</h3>
+                            <p class="text16 text-primary font-medium mt-1.5 lg:mt-3.5">Use intuitive controls to handle orders and customize settings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/how_work.webp" class="relative mx-auto -z-10 max-w-full sm:max-w-[500px] xl:max-w-full opacity-15 xl:opacity-100" alt="how_work"/>
+        </div>
+    </section> 
+    <!-- benifits  -->
+     <section class="py-5 lg:py-[30px] 2xl:py-10">
+        <div class="warrper">
+            <div class="bg-primary p-6 md:p-8 lg:p-10 2xl:p-12 pb-44 md:pb-52 lg:pb-64 2xl:pb-80 rounded-[10px] lg:rounded-[20px] 2xl:rounded-[30px]">
+                <div class="text-center mb-8 md:mb-10 lg:mb-12 2xl:mb-14">
+                    <p class="text18 text-secondary font-medium">BENIFITS</p>
+                    <h2 class="text-white font-bold">Why Choose Table Tick?</h2>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-2.5 -mt-44 md:-mt-52 lg:-mt-64 2xl:-mt-80 px-5 lg:px-8 xl:px-12">
+                <div class="w-full sm:w-1/2 md:w-1/3 p-2.5 h-auto">
+                    <div class="bg-[#F5F5F5] pt-5 px-4 lg:pt-6 lg:px-5 2xl:pt-7 2xl:px-6 rounded-xl lg:rounded-2xl 2xl:rounded-3xl h-full">
+                        <h3 class="text-primary font-semibold text18 text-center max-w-[300px] mx-auto">Streamline Order Management Effortlessly</h3>
+                        <p class="text-[#878F9F] text16 font-medium text-center mb-5 lg:mb-6 2xl:mb-7">Simplify How To Take And Manage Orders With An Intuitive Interface Designed For Speed And Accuracy.</p>
+                        <img src="assets/images/benifits1.webp" class="mx-auto" alt="benifits1"/>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 p-2.5 h-auto">
+                    <div class="bg-[#F5F5F5] pb-5 px-4 lg:pb-6 lg:px-5 2xl:pb-7 2xl:px-6 rounded-xl lg:rounded-2xl 2xl:rounded-3xl h-full">
+                        <img src="assets/images/benifits2.webp" class="mx-auto" alt="benifits2"/>
+                        <h3 class="text-primary font-semibold text18 text-center max-w-[280px] mx-auto mt-5 lg:mt-6 2xl:mt-7">Accurate Bill Tracking And Easy Splits</h3>
+                        <p class="text-[#878F9F] text16 font-medium text-center max-w-[340px] mx-auto">Automate Billing With Precision, Including Seamless Group Bill Splitting.</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 p-2.5 h-auto">
+                    <div class="bg-[#F5F5F5] pt-5 px-4 lg:pt-6 lg:px-5 2xl:pt-7 2xl:px-6 rounded-xl lg:rounded-2xl 2xl:rounded-3xl h-full">
+                        <h3 class="text-primary font-semibold text18 text-center max-w-[300px] mx-auto">Streamline Order Management Effortlessly</h3>
+                        <p class="text-[#878F9F] text16 font-medium text-center mb-5 lg:mb-6 2xl:mb-7">Simplify How To Take And Manage Orders With An Intuitive Interface Designed For Speed And Accuracy.</p>
+                        <img src="assets/images/benifits3.webp" class="mx-auto" alt="benifits3"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- benifits  -->
+    <!-- testimonials   -->
+    <section class="py-5 lg:py-[30px] 2xl:py-10">
+        <div class="warrper">
+            <div class="flex flex-wrap items-center -mx-2.5">
+                <div class="w-full lg:w-5/12 p-2.5">
+                    <p class="text18 text-secondary font-medium">TESTIMONIALS</p>
+                    <h2 class="text-primary font-bold max-w-[500px] capitalize">what our users say about us?</h2>
+                    <p class="text16 text-[#8B93A3] font-medium max-w-[480px] mb-3 lg:mb-5 2xl:mb-7">Customer satisfaction and operational efficiency have increased dramatically when Table Tick was implemented. Our restaurant administration has been more efficient due to the user-friendly interface and real-time updates.</p>
+                    <div class="btn flex items-center justify-between w-full max-w-[228px]">
+                        <button>View All Reviews</button>
+                        <span class="icon-next text24 font-medium"></span>
+                    </div>
+                </div>
+                <div class="w-full lg:w-7/12 p-2.5">
+                    <div class="flex flex-wrap items-center -mx-2.5 space-y-4 md:space-y-6 lg:space-y-8 2xl:space-y-10">
+                        <div class="w-1/12 sm:w-2/12 lg:w-1/12 p-2.5">
+                            <span>
+                                <svg class="w-8 h-8 lg:h-10 lg:w-10 2xl:h-12 2xl:w-12" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 51 50" fill="none">
+                                    <ellipse cx="25.9405" cy="25" rx="24.9977" ry="25" fill="#E94E1B"/>
+                                    <path d="M22.7392 15.4932L23.9209 17.6699C23.2575 18.6088 22.6356 19.6545 22.0551 20.8069C21.5162 21.9592 21.2052 23.1543 21.1223 24.392L24.5428 25.0322V32.3946H15.0276V27.1449C15.0276 24.1146 15.7117 21.6818 17.0799 19.8466C18.4895 17.9686 20.376 16.5175 22.7392 15.4932ZM35.053 15.4932L36.2346 17.6699C35.5712 18.6088 34.9493 19.6545 34.3689 20.8069C33.8299 21.9592 33.519 23.1543 33.436 24.392L36.8565 25.0322V32.3946H27.3413V27.1449C27.3413 24.1146 28.0254 21.6818 29.3936 19.8466C30.8033 17.9686 32.6897 16.5175 35.053 15.4932Z" fill="white"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="w-2/12 sm:w-3/12 lg:w-2/12 p-2.5">
+                            <img src="assets/images/testi1.webp" alt="testi1"/>
+                        </div>
+                        <div class="w-9/12 sm:w-6/12 lg:w-9/12 p-2.5">
+                            <h4 class="text24 font-semibold text-primary mb-1">B'mine Hotels</h4>
+                            <span class="inline-block text16 text-secondary font-medium mb-1">Matthias Beinlich</span>
+                            <p class="text16 font-medium text-[#8A8D8A] max-w-[570px]">Sending orders to the kitchen is easy and helps us work better with Table Tick. Easy to give orders in kitchen.</p>
+                        </div>
+                        <div class="w-1/12 sm:w-2/12 lg:w-1/12 p-2.5">
+                            <span>
+                                <svg class="w-8 h-8 lg:h-10 lg:w-10 2xl:h-12 2xl:w-12" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 51 50" fill="none">
+                                    <ellipse cx="25.9405" cy="25" rx="24.9977" ry="25" fill="#EFBE00"/>
+                                    <path d="M22.7392 15.4932L23.9209 17.6699C23.2575 18.6088 22.6356 19.6545 22.0551 20.8069C21.5162 21.9592 21.2052 23.1543 21.1223 24.392L24.5428 25.0322V32.3946H15.0276V27.1449C15.0276 24.1146 15.7117 21.6818 17.0799 19.8466C18.4895 17.9686 20.376 16.5175 22.7392 15.4932ZM35.053 15.4932L36.2346 17.6699C35.5712 18.6088 34.9493 19.6545 34.3689 20.8069C33.8299 21.9592 33.519 23.1543 33.436 24.392L36.8565 25.0322V32.3946H27.3413V27.1449C27.3413 24.1146 28.0254 21.6818 29.3936 19.8466C30.8033 17.9686 32.6897 16.5175 35.053 15.4932Z" fill="white"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="w-2/12 sm:w-3/12 lg:w-2/12 p-2.5">
+                            <img src="assets/images/testi2.webp" alt="testi2"/>
+                        </div>
+                        <div class="w-9/12 sm:w-6/12 lg:w-9/12 p-2.5">
+                            <h4 class="text24 font-semibold text-primary mb-1">B'mine Hotels</h4>
+                            <span class="inline-block text16 text-secondary font-medium mb-1">Matthias Beinlich</span>
+                            <p class="text16 font-medium text-[#8A8D8A] max-w-[570px]">Sending orders to the kitchen is easy and helps us work better with Table Tick. Easy to give orders in kitchen.</p>
+                        </div>
+                        <div class="w-1/12 sm:w-2/12 lg:w-1/12 p-2.5">
+                            <span>
+                                <svg class="w-8 h-8 lg:h-10 lg:w-10 2xl:h-12 2xl:w-12" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 51 50" fill="none">
+                                    <ellipse cx="25.9405" cy="25" rx="24.9977" ry="25" fill="#00973A"/>
+                                    <path d="M22.7392 15.4932L23.9209 17.6699C23.2575 18.6088 22.6356 19.6545 22.0551 20.8069C21.5162 21.9592 21.2052 23.1543 21.1223 24.392L24.5428 25.0322V32.3946H15.0276V27.1449C15.0276 24.1146 15.7117 21.6818 17.0799 19.8466C18.4895 17.9686 20.376 16.5175 22.7392 15.4932ZM35.053 15.4932L36.2346 17.6699C35.5712 18.6088 34.9493 19.6545 34.3689 20.8069C33.8299 21.9592 33.519 23.1543 33.436 24.392L36.8565 25.0322V32.3946H27.3413V27.1449C27.3413 24.1146 28.0254 21.6818 29.3936 19.8466C30.8033 17.9686 32.6897 16.5175 35.053 15.4932Z" fill="white"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="w-2/12 sm:w-3/12 lg:w-2/12 p-2.5">
+                            <img src="assets/images/testi3.webp" alt="testi3"/>
+                        </div>
+                        <div class="w-9/12 sm:w-6/12 lg:w-9/12 p-2.5">
+                            <h4 class="text24 font-semibold text-primary mb-1">B'mine Hotels</h4>
+                            <span class="inline-block text16 text-secondary font-medium mb-1">Matthias Beinlich</span>
+                            <p class="text16 font-medium text-[#8A8D8A] max-w-[570px]">Sending orders to the kitchen is easy and helps us work better with Table Tick. Easy to give orders in kitchen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book Demo  -->
+   <div class="w-full h-screen bg-black/30 backdrop-blur-sm p-10 fixed inset-0 hidden">
+    <div class="w-full h-full py-12 px-5 flex items-center justify-center">
+        <div class="w-full max-w-[746px] bg-white rounded-[10px] p-5 lg:p-7 2xl:p-9 space-y-3.5 lg:space-y-5 2xl:space-y-7">
+            <div class="flex items-center justify-between">
+                <h4 class="text28 text-primary font-semibold">Book Demo</h4>
+                <span class="icon-close text-24 text-[#515F74]"></span>
+            </div>
+            <form class="flex flex-wrap items-center -mx-2.5">
+                <div class="w-full sm:w-1/2 p-2.5">
+                    <label class="text-16 font-medium text-primary block mb-[2px]">Name</label>
+                    <input type="text" class="w-full text16 font-medium outline-none text-[#8A8D8A] bg-[#F5F5F5] rounded p-2.5 lg:p-3.5 2xl:p-4" required/>
+                </div>
+                <div class="w-full sm:w-1/2 p-2.5">
+                    <label class="text-16 font-medium text-primary block mb-[2px]">Email</label>
+                    <input type="email" class="w-full text16 font-medium outline-none text-[#8A8D8A] bg-[#F5F5F5] rounded p-2.5 lg:p-3.5 2xl:p-4" required/>
+                </div>
+                <div class="w-full sm:w-1/2 p-2.5">
+                    <label class="text-16 font-medium text-primary block mb-[2px]">Restaurent Name</label>
+                    <input type="text" class="w-full text16 font-medium outline-none text-[#8A8D8A] bg-[#F5F5F5] rounded p-2.5 lg:p-3.5 2xl:p-4" required/>
+                </div>
+                <div class="w-full sm:w-1/2 p-2.5">
+                    <label class="text-16 font-medium text-primary block mb-[2px]">Mobile Number</label>
+                    <input type="text" class="w-full text16 font-medium outline-none text-[#8A8D8A] bg-[#F5F5F5] rounded p-2.5 lg:p-3.5 2xl:p-4" required/>
+                </div>
+                <div class="w-full sm:w-1/2 p-2.5">
+                    <label class="text-16 font-medium text-primary block mb-[2px]">Country</label>
+                    <input type="text" class="w-full text16 font-medium outline-none text-[#8A8D8A] bg-[#F5F5F5] rounded p-2.5 lg:p-3.5 2xl:p-4" required/>
+                </div>
+            </form>
+            <div class="text-white bg-secondary text18 rounded font-medium border border-secondary anim py-3 px-4 lg:py-3.5 lg:px-5 2xl:py-4 2xl:px-6 hover:text-secondary hover:bg-transparent hover:border-secondary flex items-center justify-between max-w-32 sm:max-w-[180px]">
+                <button>Next</button>
+                <span class="icon-next text-24 font-medium"></span>
+            </div>
+        </div>
+    </div>
+   </div>
+    <!-- Book Demo  -->
+
+    <!-- Book Demo (select time)  -->
+   <div class="w-full h-screen bg-black/30 backdrop-blur-sm p-10 fixed inset-0 hidden">
+    <div class="w-full h-full py-12 px-5 flex items-center justify-center">
+        <div class="w-full max-w-[746px] bg-white rounded-[10px] p-5 lg:p-7 2xl:p-9 space-y-3.5 lg:space-y-5 2xl:space-y-7">
+            <div class="flex items-center justify-between">
+                <h4 class="text28 text-primary font-semibold">Select Time</h4>
+                <span class="icon-close text-24 text-[#515F74]"></span>
+            </div>
+            <div class="flex flex-wrap items-center -mx-1.5">
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+                <div class="w-1/2 sm:w-1/4 md:w-1/5 p-1.5">
+                    <div class="bg-primary rounded-lg border-2 border-[#EDEDED] py-2 px-4 lg:py-2.5 lg:px-5 2xl:py-3 2xl:px-7">
+                        <p class="text-white text-16 font-normal text-center text-wrap sm:text-nowrap">09:00 AM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2.5">
+                <div class="text-white bg-secondary text18 rounded font-medium border border-secondary anim py-3 px-4 lg:py-3.5 lg:px-5 2xl:py-4 2xl:px-6 hover:text-secondary hover:bg-transparent hover:border-secondary flex items-center justify-between w-full max-w-32 sm:max-w-[180px]">
+                    <span class="icon-next text-20 font-medium"></span>
+                    <button>Back</button>
+                </div>
+                <div class="text-white bg-secondary text18 rounded font-medium border border-secondary anim py-3 px-4 lg:py-3.5 lg:px-5 2xl:py-4 2xl:px-6 hover:text-secondary hover:bg-transparent hover:border-secondary flex items-center justify-between w-full max-w-32 sm:max-w-[180px]">
+                    <button>Next</button>
+                    <span class="icon-next text-20 font-medium"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    <!-- Book Demo (select time) -->
+
+    <!-- Book Demo (book successfully)  -->
+    <div class="w-full h-screen bg-black/30 backdrop-blur-sm p-10 fixed inset-0 hidden">
+        <div class="w-full h-full py-12 px-5 flex items-center justify-center">
+            <div class="w-full max-w-[746px] bg-white rounded-[10px] p-5 lg:p-7 2xl:p-9 space-y-3.5 lg:space-y-5 2xl:space-y-7">
+                <div class="flex items-center justify-between">
+                    <h4 class="text28 text-primary font-semibold">Book Demo</h4>
+                    <span class="icon-close text-24 text-[#515F74]"></span>
+                </div>
+                <img src="assets/images/book_demo.webp" alt="book_demo"/>
+                <p class="text16 text-primary font-medium max-w-[416px] mx-auto text-center">We have scheduled your demo, and a member of our staff will be in touch with you soon.</p>
+            </div>
+        </div>
+       </div>
+    <!-- Book Demo (book successfully)  -->
+   
+   
+   
+   
+   
+    <script>
+        function toggleActive(Id, db) {
+        var element = document.querySelector(Id);
+        element.classList.toggle(db);
+        }
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 3,
+        spaceBetween: 30,
+        mousewheel: true,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+          delay: 500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+    });     
+    </script>
+</body>
+</html>
